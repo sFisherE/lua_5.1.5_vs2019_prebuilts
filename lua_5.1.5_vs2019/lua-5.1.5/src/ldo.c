@@ -503,6 +503,8 @@ static void f_parser (lua_State *L, void *ud) {
     cl->l.upvals[i] = luaF_newupval(L);
   setclvalue(L, L->top, cl);
   incr_top(L);
+
+  luaU_print(tf, 1);
 }
 
 
